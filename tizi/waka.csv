@@ -1,0 +1,6 @@
+id,name,age,salary,start_date,department
+101,Ana,29,55000,2021-03-01,HR
+102,Bob,,62000,2020/07/15,IT
+103,Cam,thirty,58000,2019-11-20,Finance
+104,Ana,29,55000,2021-03-01,HR
+105,Dan,41,,2022-01-10,IT
