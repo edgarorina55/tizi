@@ -5,4 +5,42 @@ DataFrame
     .similar to Excel or SQL
 .easens data handling, filtering, and analyzing large datasets 
 
-.
+.creating a DataFrame
+    .using a list 
+        .it automatically assigns index values to the rows when passing the list 
+        .each item in the list becomes a row 
+        .DataFrame consists of a single, unnamed columns
+
+    .using a dictionary of Numpy array
+        .each key = column name
+        .each corresponding Numpy array = values for the column  
+    .using list of dictionaries 
+        .each dictionary represents a row
+        .useful for handling structured data from APIs or JSON
+            .commonly used for web scraping and API processing 
+
+
+dataframe index
+.acts as reference for each row in a dataset 
+.can be numeric or based on specific column values 
+.RangeIndex is usually the default - starts from 0
+    .can be customized for better understanding 
+.it can be used as an attribute to access the current index of a dataframe 
+
+
+    .using Powershell:
+        .create the dataframe 
+        .save it to a .csv file with a false index
+        .then read the csv file 
+
+    >> setting custom index
+        .use set_index() method 
+        .sets the index of the dataframe by setting one or more columns as the new index
+
+.saving two csv tables in one file
+    .save them in an Excel file - to have the files separate 
+
+    with pd.ExcelWriter("combined.xlsx") as writer:
+        df1.to_excel(writer, sheet_name="Table1", index=False)
+        df2.to_excel(writer, sheet_name="Table2", index=False)
+        
