@@ -1,0 +1,10 @@
+Documenting my Pandas workflow
+
+.define/ describe my working database 
+.the questions I want to answer with the data
+.every transformation step I take to get to the answer
+.code snippets of the transformations
+.outputs of the transformations
+.files I save along the way
+.notes and decisions I make along the way
+
