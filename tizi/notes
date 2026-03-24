@@ -8,3 +8,42 @@ Documenting my Pandas workflow
 .files I save along the way
 .notes and decisions I make along the way
 
+
+
+Actual things:
+>> Project header:
+    .project name
+    .author
+    .date
+    .environment
+    .dataset name 
+    .goal of the project
+
+
+>> dataset overview 
+    .file name
+    .rows 
+    .columns 
+    .initial observations about the data
+        .inconsitent date formats 
+        .missing values 
+
+>> environment setup
+    .libraries imported 
+    .version of libraries used
+
+>> data cleaning steps
+    .step 1: handling missing values
+
+>> analysis steps
+    .step 1: calculating summary statistics
+    .step 2: creating visualizations
+
+>> exporting results
+    .files saved 
+    .formats used (e.g., CSV, Excel)
+
+>> notes, issues, and decisions 
+    .notes on data quality 
+    .decisions made during analysis 
+        .handling outliers, choosing visualization types
