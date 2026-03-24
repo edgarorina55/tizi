@@ -26,6 +26,7 @@ dataframe index
 .RangeIndex is usually the default - starts from 0
     .can be customized for better understanding 
 .it can be used as an attribute to access the current index of a dataframe 
+.easens locating specific data points using the .loc() method 
 
 
     .using Powershell:
@@ -37,10 +38,34 @@ dataframe index
         .use set_index() method 
         .sets the index of the dataframe by setting one or more columns as the new index
 
+        .reset = df.set_index('column_name')
+
+
 .saving two csv tables in one file
     .save them in an Excel file - to have the files separate 
 
     with pd.ExcelWriter("combined.xlsx") as writer:
         df1.to_excel(writer, sheet_name="Table1", index=False)
         df2.to_excel(writer, sheet_name="Table2", index=False)
-        
+
+    
+Accessing DataFrame
+.accessing columns  
+    .accessed individually using bracket notation 
+    .it retrieves the column as a Series, which can then be further manipulated
+
+.accessing rows by index
+    .access specific rows using iloc(for positional indexing) or loc(for label-based indexing)
+
+.accessing multiple rows or columns 
+    .pass a list of column names or index positions
+    .useful when there is need to select several columns or rows for further analysis 
+
+.accessing rows based on conditions
+    .filter rows based on conditions or meeting specific criteria
+
+.accessing specific cells with at and iat
+    .for accessing specific cells 
+        .at[] method for label-based indexing
+        .iat[] method for integer position-based indexing 
+    .both methods are optimized for fast access to single values 
